@@ -12,3 +12,17 @@
 .header {
     text-align: center;
 }
+
+.taskBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: grab;
+}
