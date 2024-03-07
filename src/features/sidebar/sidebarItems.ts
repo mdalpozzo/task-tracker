@@ -1,6 +1,6 @@
 import { Counter } from "../counter/Counter"
 import { Quotes } from "../quotes/Quotes"
-import { TaskBoard } from "../taskBoard/TaskBoard"
+import { TaskBoardScreen } from "../taskBoardScreen/TaskBoardScreen"
 
 export interface NavItem {
   title: string
@@ -10,7 +10,7 @@ export interface NavItem {
 export type NavItems = Map<string, NavItem>
 
 export const items: NavItems = new Map([
-  ["TaskBoard", { title: "TaskBoard", Component: TaskBoard }],
+  ["TaskBoard", { title: "TaskBoard", Component: TaskBoardScreen }],
   ["Counter", { title: "Counter", Component: Counter }],
   ["Quotes", { title: "Quotes", Component: Quotes }],
 ])

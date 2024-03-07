@@ -1,6 +1,7 @@
-import type { Task } from "./types"
+import type { TaskBoardColumn } from "./components/TaskBoard/types/TaskBoardColumn"
+import type { TaskBoardTask } from "./components/TaskBoard/types/TaskBoardTask"
 
-export const ColumnDefinitions = [
+export const ColumnDefinitions: TaskBoardColumn[] = [
   {
     id: "todo",
     title: "To Do",
@@ -15,7 +16,7 @@ export const ColumnDefinitions = [
   },
 ]
 
-export const TaskBoardItems = new Map<string, Task[]>([
+export const TaskBoardItems = new Map<string, TaskBoardTask[]>([
   [
     "todo",
     [
